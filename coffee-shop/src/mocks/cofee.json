@@ -1,0 +1,136 @@
+{
+    "menu": {
+      "categories": [
+        {
+          "name": "Espresso",
+          "items": [
+            {
+              "id": "espresso_001",
+              "name": "Espresso",
+              "description": "A strong and bold coffee made by forcing steam through ground coffee beans.",
+              "price": 2.50,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/espresso.jpg"
+            },
+            {
+              "id": "double_espresso_002",
+              "name": "Double Espresso",
+              "description": "Twice the amount of espresso for an extra strong flavor.",
+              "price": 3.50,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/double_espresso.jpg"
+            },
+            {
+              "id": "macchiato_003",
+              "name": "Macchiato",
+              "description": "Espresso with a small amount of steamed milk.",
+              "price": 3.00,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/macchiato.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Latte",
+          "items": [
+            {
+              "id": "cafe_latte_004",
+              "name": "Cafe Latte",
+              "description": "Espresso with steamed milk and a light layer of foam.",
+              "price": 4.00,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/cafe_latte.jpg"
+            },
+            {
+              "id": "vanilla_latte_005",
+              "name": "Vanilla Latte",
+              "description": "Cafe Latte with vanilla syrup.",
+              "price": 4.50,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/vanilla_latte.jpg"
+            },
+            {
+              "id": "caramel_latte_006",
+              "name": "Caramel Latte",
+              "description": "Cafe Latte with caramel syrup.",
+              "price": 4.50,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/caramel_latte.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Cappuccino",
+          "items": [
+            {
+              "id": "cappuccino_007",
+              "name": "Cappuccino",
+              "description": "Espresso with equal parts steamed milk and foam.",
+              "price": 3.75,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/cappuccino.jpg"
+            },
+            {
+              "id": "mocha_cappuccino_008",
+              "name": "Mocha Cappuccino",
+              "description": "Cappuccino with chocolate syrup.",
+              "price": 4.25,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/mocha_cappuccino.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Cold Brew",
+          "items": [
+            {
+              "id": "cold_brew_009",
+              "name": "Cold Brew",
+              "description": "Slow-brewed coffee served over ice.",
+              "price": 3.50,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/cold_brew.jpg"
+            },
+            {
+              "id": "nitro_cold_brew_010",
+              "name": "Nitro Cold Brew",
+              "description": "Cold brew infused with nitrogen for a creamy texture.",
+              "price": 4.50,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/nitro_cold_brew.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Tea",
+          "items": [
+            {
+              "id": "chai_tea_latte_011",
+              "name": "Chai Tea Latte",
+              "description": "Spiced chai tea with steamed milk.",
+              "price": 4.00,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/chai_tea_latte.jpg"
+            },
+            {
+              "id": "green_tea_012",
+              "name": "Green Tea",
+              "description": "Brewed green tea served hot or iced.",
+              "price": 2.75,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/green_tea.jpg"
+            },
+            {
+              "id": "herbal_tea_013",
+              "name": "Herbal Tea",
+              "description": "A variety of caffeine-free herbal teas.",
+              "price": 2.50,
+              "sizes": ["Small", "Medium", "Large"],
+              "image": "https://example.com/images/herbal_tea.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
