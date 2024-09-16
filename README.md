@@ -25,16 +25,18 @@ To run this application locally, follow these steps:
    ```bash
    git clone https://github.com/your-username/coffee-shop-website.git
 
-Navigate to the project directory:
-cd coffee-shop-website
+2. Navigate to the project directory:
+   ```bash
+   cd coffee-shop-website
 
-Install the dependencies:
-npm install
+3. Install the dependencies:
+   ```bash
+   npm install
 
-Usage
+**Usage**
 To start the application, run:
-
-npm start
+    ```bash
+   npm start
 
 Open your browser and go to http://localhost:3000 to view the website.
 
