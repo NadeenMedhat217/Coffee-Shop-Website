@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "sora";
+  src: url("./assets/fonts/Sora-Regular.ttf");
+}
+
 .App {
   text-align: center;
 }
