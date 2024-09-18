@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CustomizedRadioButton.css";
+import styles from "../CustomizedRadioButton/CustomizedRadioButton.module.css";
 
 const CustomizedRadioButton = () => {
   const DELIVER = "Deliver";
@@ -7,8 +7,8 @@ const CustomizedRadioButton = () => {
   const [selected, setSelected] = useState(DELIVER);
 
   return (
-    <div className="toggle-wrapper">
-      <div className="toggle-container">
+    <div className={styles.toggleWrapper}>
+      <div className={styles.toggleContainer}>
         <input
           type="radio"
           id={DELIVER}
@@ -18,7 +18,9 @@ const CustomizedRadioButton = () => {
         />
         <label
           htmlFor={DELIVER}
-          className={`toggle-label ${selected === DELIVER ? "selected" : ""}`}
+          className={`${styles.toggleLabel} ${
+            selected === DELIVER ? styles.selected : ""
+          }`}
         >
           {DELIVER}
         </label>
@@ -32,7 +34,9 @@ const CustomizedRadioButton = () => {
         />
         <label
           htmlFor={PICK_UP}
-          className={`toggle-label ${selected === PICK_UP ? "selected" : ""}`}
+          className={` ${styles.toggleLabel} ${
+            selected === PICK_UP ? styles.selected : ""
+          }`}
         >
           {PICK_UP}
         </label>
