@@ -2,37 +2,39 @@ import React, { useState } from "react";
 import "./CustomizedRadioButton.css";
 
 const CustomizedRadioButton = () => {
-  const [selected, setSelected] = useState("deliver");
+  const DELIVER = "Deliver";
+  const PICK_UP = "Pick Up";
+  const [selected, setSelected] = useState(DELIVER);
 
   return (
     <div className="toggle-wrapper">
       <div className="toggle-container">
         <input
           type="radio"
-          id="deliver"
+          id={DELIVER}
           name="option"
-          checked={selected === "deliver"}
-          onChange={() => setSelected("deliver")}
+          checked={selected === DELIVER}
+          onChange={() => setSelected(DELIVER)}
         />
         <label
-          htmlFor="deliver"
-          className={`toggle-label ${selected === "deliver" ? "selected" : ""}`}
+          htmlFor={DELIVER}
+          className={`toggle-label ${selected === DELIVER ? "selected" : ""}`}
         >
-          Deliver
+          {DELIVER}
         </label>
 
         <input
           type="radio"
-          id="pickup"
+          id={PICK_UP}
           name="option"
-          checked={selected === "pickup"}
-          onChange={() => setSelected("pickup")}
+          checked={selected === PICK_UP}
+          onChange={() => setSelected(PICK_UP)}
         />
         <label
-          htmlFor="pickup"
-          className={`toggle-label ${selected === "pickup" ? "selected" : ""}`}
+          htmlFor={PICK_UP}
+          className={`toggle-label ${selected === PICK_UP ? "selected" : ""}`}
         >
-          Pick Up
+          {PICK_UP}
         </label>
       </div>
     </div>
