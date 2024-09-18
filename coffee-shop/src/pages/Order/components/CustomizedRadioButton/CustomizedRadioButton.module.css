@@ -1,0 +1,46 @@
+/* Center the Customized Radio button */
+.toggleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.toggleContainer {
+  display: flex;
+  white-space: nowrap;
+  border: 2px solid var(--lightGreyBackground);
+  border-radius: 10px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.toggleContainer input[type="radio"] {
+  display: none;
+}
+
+.toggleLabel {
+  padding: 10px 30px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+.toggleLabel.selected {
+  background-color: var(--orangeButton);
+  color: var(--whiteText);
+  font-weight: bold; /* Bold text for selected option */
+}
+
+.toggleLabel:not(.selected) {
+  background-color: var(--lightGreyBackground);
+  color: var(--greyText);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .toggleLabel {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+}

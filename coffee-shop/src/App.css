@@ -29,6 +29,15 @@
   color: white;
 }
 
+:root {
+  --orangeButton: #c67c4e;
+  --lightOrange: #edd6c8;
+  --simonBackground: #f9f2ed;
+  --greyText: #313131;
+  --lightGreyBackground: #e3e3e3;
+  --whiteText: white;
+}
+
 .App-link {
   color: #61dafb;
 }
