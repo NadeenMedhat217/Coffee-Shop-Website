@@ -3,7 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  max-height: 327px;
+  width: 100%; /* Full width of the viewport */
+  margin-top: 15px;
 }
 
 .toggleContainer {
@@ -12,7 +14,8 @@
   border: 2px solid var(--lightGreyBackground);
   border-radius: 10px;
   overflow: hidden;
-  width: fit-content;
+  width: 87%; /* Takes up 80% of the parent container's width */
+  max-width: 600px; /* Optional: Set a max-width for the container */
 }
 
 .toggleContainer input[type="radio"] {

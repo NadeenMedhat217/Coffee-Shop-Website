@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*min-width: 327px;*/
+  max-height: 327px;
+  width: 100%; /* Full width of the viewport */
+  margin-top: 15px;
+}
+
+.button {
+  width: 87%; /* Button takes up 80% of its parent container's width */
+  min-height: 56px;
+  /*max-width: 600px; /* Optional: Set a max-width for the button */
+  /*display: flex;*/
+  background-color: var(--orangeButton);
+  border: none;
+  border-radius: 10px; /* Less rounded corners */
+  color: var(--whiteText);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  /*background-color: var(--lightOrange);*/
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    padding: 10px 15px; /* Further adjust padding for very small screens */
+    font-size: 12px;
+  }
+}
