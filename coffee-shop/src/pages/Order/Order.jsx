@@ -1,12 +1,14 @@
 import React from "react";
 import CustomizedRadioButton from "./components/CustomizedRadioButton/CustomizedRadioButton";
+import Button from "../../genericComponents/Button/Button";
 
 const Order = () => {
   return (
-    <div>
-      Order
+    <>
+      Order page
       <CustomizedRadioButton />
-    </div>
+      <Button text="Order" />
+    </>
   );
 };
 
