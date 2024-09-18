@@ -15,7 +15,6 @@
   border-radius: 10px;
   overflow: hidden;
   width: 87%; /* Takes up 80% of the parent container's width */
-  max-width: 600px; /* Optional: Set a max-width for the container */
 }
 
 .toggleContainer input[type="radio"] {
