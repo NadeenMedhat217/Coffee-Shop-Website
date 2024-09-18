@@ -1,0 +1,18 @@
+.cardContainer {
+  min-width: 327px;
+  max-width: auto;
+  background: transparent;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position:relative ;
+}
+
+.image {
+  display: flex;
+  border-radius: 20px;
+  width: 87%;
+  max-height: 202px;
+}
