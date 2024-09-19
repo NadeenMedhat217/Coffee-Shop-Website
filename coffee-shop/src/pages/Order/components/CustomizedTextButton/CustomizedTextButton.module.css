@@ -1,0 +1,42 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Full height of the viewport */
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid var(--greyBorder);
+  border-radius: 20px;
+  background-color: var(--whiteText);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--hoverBackground);
+}
+
+.buttonIcon {
+  margin-right: 10px;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.buttonText {
+  font-size: 14px;
+  color: var(--greyText);
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 8px 16px;
+  }
+}
