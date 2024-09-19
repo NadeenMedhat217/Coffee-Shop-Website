@@ -5,6 +5,7 @@ import CustomizedRadioButton from "./components/CustomizedRadioButton";
 import CustomizedTextButton from "./components/CustomizedTextButton";
 import styles from "./components/CustomizedTextButton/CustomizedTextButton.module.css";
 import DeliveryAddress from "./components/DeliveryAddress";
+import PaymentSummary from "./components/PaymentSummary";
 import GreyHorizontalLine from "../../genericComponents/GreyHorizontalLine";
 import LightOrangeLine from "./components/LightOrangeLine";
 import icons from "../../assets/icons/iconImport";
@@ -43,6 +44,7 @@ const Order = () => {
       </div>
       <GreyHorizontalLine />
       <LightOrangeLine />
+      <PaymentSummary price={4.53} deliveryFee={1.0} />
       <Button label="Order" />
     </div>
   );
