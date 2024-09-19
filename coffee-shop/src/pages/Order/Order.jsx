@@ -31,12 +31,12 @@ const Order = () => {
         <div className={styles.buttonWrapper}>
           <CustomizedTextButton
             icon={icons.edit}
-            text="Edit Address"
+            label="Edit Address"
             handleClick={handleEditClick}
           />
           <CustomizedTextButton
             icon={icons.note}
-            text="Add Note"
+            label="Add Note"
             handleClick={handleNoteClick}
           />
         </div>
