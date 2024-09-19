@@ -10,12 +10,12 @@ const DescriptionBox = ({textDiscription}) => {
     return(
         <div className= {styles.Container}>
             <h3>Description</h3>
-            <p className= {styles.Text}>
+            <span className= {styles.Text}>
                 {isReadMore ? `${textDiscription.slice(0,50)}...` : textDiscription}
                 <p onClick={toggleReadMore} className= {styles.ReadMore}>
-                    {isReadMore ? "Read More" : "Show Less"}
+                    {isReadMore ? "  Read More" : "  Show Less"}
                 </p>
-            </p>
+            </span>
         </div>
     );
 };
