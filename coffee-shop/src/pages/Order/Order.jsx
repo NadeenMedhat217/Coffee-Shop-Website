@@ -41,9 +41,9 @@ const Order = () => {
           />
         </div>
       </div>
-      <Button label="Order" />
       <GreyHorizontalLine />
       <LightOrangeLine />
+      <Button label="Order" />
     </div>
   );
 };
