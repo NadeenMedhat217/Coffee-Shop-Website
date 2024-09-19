@@ -1,0 +1,26 @@
+.deliveryAddressContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Full height of the viewport */
+}
+
+.deliveryAddress {
+  text-align: left;
+  color: var(--greyText);
+}
+
+.deliveryAddress p {
+  margin-bottom: 8px; /* Adjust this value to reduce the space */
+}
+
+.addressDetails {
+  color: var(--lightGreyText);
+  margin-top: 0%;
+}
+
+@media (max-width: 768px) {
+  .deliveryAddressContainer {
+    padding: 0 20px; /* Adds padding on smaller screens */
+  }
+}
