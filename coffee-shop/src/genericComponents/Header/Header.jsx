@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../Header/Header.module.css"
-import images from "../../assets/images/imageImports";
+import icons from "../../assets/icons/iconImport";
 
 const Header = ({pageName}) => {
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ const Header = ({pageName}) => {
         <div className={styles.HeaderBox}>
             <div className= {styles.HeaderText}>{pageName}</div>
              <button onClick={HandleClick} className={styles.HeaderBackButton}>
-                <img src= {images.BackButton} alt="" />
+                <img src= {icons.arrowLeft} alt="" />
              </button>
         </div>
     );
