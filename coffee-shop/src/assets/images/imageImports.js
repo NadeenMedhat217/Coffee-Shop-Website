@@ -5,7 +5,6 @@ import coffee4 from "../images/Coffee4.png"
 import coffee5 from "../images/Coffee5.png"
 import coffee6 from "../images/Coffee6.png"
 import coffee7 from "../images/Coffee7.png"
-import BackButton from  "../images/BackButton.png"
 
  const images = {
     coffee1,
@@ -15,6 +14,5 @@ import BackButton from  "../images/BackButton.png"
     coffee5,
     coffee6,
     coffee7,
-    BackButton,
 }
 export default images;
