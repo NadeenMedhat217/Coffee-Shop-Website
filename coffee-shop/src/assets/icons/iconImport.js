@@ -19,6 +19,9 @@ import milk from "../icons/milk.svg"
 import minusCircle from "../icons/minuscircle.svg"
 import plus from "../icons/plus.svg"
 import plusCircle from "../icons/pluscircle.svg"
+import edit from "../icons/Edit.svg"
+import note from "../icons/Note.svg"
+import wallet from "../icons/Wallet.svg"
 
 
 const icons = {
@@ -43,6 +46,9 @@ const icons = {
     minusCircle,
     plus,
     plusCircle,
+    edit,
+    note,
+    wallet,
 }
 
 export default icons
