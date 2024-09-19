@@ -7,7 +7,7 @@ const Order = () => {
     <>
       Order page
       <CustomizedRadioButton />
-      <Button text="Order" />
+      <Button label="Order" />
     </>
   );
 };

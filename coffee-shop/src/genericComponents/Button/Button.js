@@ -5,7 +5,7 @@ const Button = ({ label, handleClick }) => {
   return (
     <div className={styles.container}>
       <button onClick={handleClick} className={styles.button}>
-        {label.text}
+        {label}
       </button>
     </div>
   );
