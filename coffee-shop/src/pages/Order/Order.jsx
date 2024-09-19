@@ -9,6 +9,14 @@ import GreyHorizontalLine from "../../genericComponents/GreyHorizontalLine";
 import LightOrangeLine from "./components/LightOrangeLine";
 import icons from "../../assets/icons/iconImport";
 
+const handleEditClick = () => {
+  console.log("Edit button clicked"); //Temporary logic
+};
+
+const handleNoteClick = () => {
+  console.log("Note button clicked"); //Temporary logic
+};
+
 const Order = () => {
   return (
     <div>
@@ -21,8 +29,16 @@ const Order = () => {
       />
       <div className={styles.buttonContainer}>
         <div className={styles.buttonWrapper}>
-          <CustomizedTextButton icon={icons.edit} text="Edit Address" />
-          <CustomizedTextButton icon={icons.note} text="Add Note" />
+          <CustomizedTextButton
+            icon={icons.edit}
+            text="Edit Address"
+            handleClick={handleEditClick}
+          />
+          <CustomizedTextButton
+            icon={icons.note}
+            text="Add Note"
+            handleClick={handleNoteClick}
+          />
         </div>
       </div>
       <Button label="Order" />
