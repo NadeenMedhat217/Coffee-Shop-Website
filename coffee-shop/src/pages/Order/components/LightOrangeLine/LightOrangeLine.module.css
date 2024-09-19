@@ -1,0 +1,18 @@
+/* HorizontalLine.module.css */
+.horizontalLine {
+    width: 100%;
+    /*max-width: 295px;*/
+    height: 0;
+    border-top: 4px solid var(--lightOrange);
+    opacity: 1;
+    transform: rotate(0deg);
+    margin: 0 auto;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px; /* Full viewport height */
+    margin-top: 10px;
+  }
