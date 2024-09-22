@@ -8,6 +8,7 @@ import DeliveryAddress from "./components/DeliveryAddress";
 import GreyHorizontalLine from "../../genericComponents/GreyHorizontalLine";
 import LightOrangeLine from "./components/LightOrangeLine";
 import icons from "../../assets/icons/iconImport";
+import WalletComponent from "./components/WalletComponent";
 
 const handleEditClick = () => {
   console.log("Edit button clicked"); //Temporary logic
@@ -43,6 +44,7 @@ const Order = () => {
       </div>
       <GreyHorizontalLine />
       <LightOrangeLine />
+      <WalletComponent price={4.53} deliveryFee={1.03} />
       <Button label="Order" />
     </div>
   );
