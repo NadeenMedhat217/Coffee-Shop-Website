@@ -1,0 +1,34 @@
+.button{
+    border: 2px solid var(--lightGreyBackground);
+    border-radius: 12px;
+    display: inline;
+    font-family: "sora";
+    background-color: white;
+    width: 96px;
+    height: 41px;
+    margin: 10px auto auto 10px;
+
+}
+
+.buttonText{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--BlackText);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover{
+    cursor: pointer;
+    border-color: var(--orangeButton);
+    color: var(--orangeButton);
+    background-color: var(--simonBackground);
+}
+.button::selection{
+    cursor: pointer;
+    border-color: var(--orangeButton);
+    color: var(--orangeButton);
+    background-color: var(--simonBackground); 
+}
+

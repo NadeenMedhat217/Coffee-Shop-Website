@@ -1,0 +1,49 @@
+.searchContainer {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Optional: limit the maximum width */
+    margin: 0 auto; 
+    gap: 10px;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    background-color: #2A2A2A;
+    color: white;
+    padding: 13px 40px; /* Adjust padding to make space for the icon */
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 15px; 
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    pointer-events: none; 
+}
+
+.searchInput::placeholder {
+    color: #dcdcdc;
+}
+
+.filterBtn {
+    border: none;
+    background-color: #C67C4E;
+    color: white;
+    border-radius: 12px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.filterBtn .filterIcon {
+    width: 20px;
+    height: 20px;
+}
