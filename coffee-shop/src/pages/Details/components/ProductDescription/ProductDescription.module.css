@@ -1,0 +1,61 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  width: 87%;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.HeaderContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 129px;
+  width: 100%;
+  min-width: 100px;
+  height: 44px;
+}
+
+.Header {
+  font-family: "sora";
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: var(--blackText);
+}
+
+.SubHeader {
+  font-family: "sora";
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: var(--shadowGreyText);
+}
+
+.Rating {
+  margin-bottom: 0px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.RatingText {
+  font-family: "sora";
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0px 0 0;
+  color: var(--blackText);
+}
+
+.RatingSubText {
+  margin: 3px 0 0 5px;
+  font-family: "sora";
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--shadowGreyText);
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  fill: #FBBE21;
+}
