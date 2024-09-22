@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../PageFooter/PageFooter.module.css";
 import Price from "./Price/Price";
-import Button from "../../../../genericComponents/Button/Button";
+import Button from "../../../../genericComponents/Button";
 
 const PageFooter = ({ itemPrice }) => {
   const navigate = useNavigate();
