@@ -1,0 +1,12 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    width: 87%;
+    margin: 10px auto;
+}
+
+.buttonContainer{
+    min-width: 217px;
+    width: 100%;
+    margin: 10px auto auto 20px;
+}

@@ -1,0 +1,50 @@
+.paymentSummaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--pagesBackground);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.paymentSummaryTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.paymentSummaryItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.paymentSummaryItem:last-child {
+  margin-bottom: 0;
+}
+
+.originalFee {
+  text-decoration: line-through;
+  color: var(--greyText);
+  font-weight: lighter;
+}
+
+.discountedFee {
+  color: var(--greyText);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .paymentSummaryContainer {
+    padding: 15px;
+  }
+
+  .paymentSummaryTitle {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+}

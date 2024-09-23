@@ -34,12 +34,15 @@
   --lightOrange: #edd6c8;
   --simonBackground: #f9f2ed;
   --greyText: #313131;
+  --midGreyText: #2a2a2a;
   --lightGreyText: #a2a2a2;
   --lightGreyBackground: #e3e3e3;
+  --pagesBackground: #f9f9f9;
   --hoverBackground: #e0e0e0;
   --whiteText: white;
   --blackText: #242424;
   --greyBorder: #a2a2a2;
+  --shadowGreyText: #909090;
 }
 
 .App-link {
