@@ -1,0 +1,24 @@
+.Container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.HeaderText{
+    font-family: "sora";
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--shadowGreyText);
+}
+
+.PriceText{
+    font-family: "sora";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--orangeButton);
+    margin-top: 10px;
+}
