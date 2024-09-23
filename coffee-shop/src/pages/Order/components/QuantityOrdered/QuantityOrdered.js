@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./QuantityOrdered.module.css";
 import QuantityButton from "../QuantityButton";
 import icons from "../../../../assets/icons/iconImport";
 
-const QuantityOrdered = ({ image, name }) => {
+const QuantityOrdered = ({ image, name, onQuantityChange }) => {
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => setQuantity(quantity + 1);
   const decreaseQuantity = () => setQuantity(quantity > 1 ? quantity - 1 : 1);
+
+  useEffect(() => {
+    onQuantityChange(quantity);
+  }, [quantity, onQuantityChange]);
 
   return (
     <div className={styles.container}>

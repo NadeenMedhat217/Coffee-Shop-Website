@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../genericComponents/Header/Header";
 import Button from "../../genericComponents/Button/";
 import CustomizedRadioButton from "./components/CustomizedRadioButton";
@@ -21,6 +21,12 @@ const handleNoteClick = () => {
 };
 
 const Order = () => {
+  const [ , setQuantity] = useState(1);
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+  };
+
   return (
     <div>
       Order page
@@ -45,7 +51,11 @@ const Order = () => {
         </div>
       </div>
       <GreyHorizontalLine />
-      <QuantityOrdered image={images.coffee2} name="Caffee Mocha" />
+      <QuantityOrdered
+        image={images.coffee2}
+        name="Caffee Mocha"
+        onQuantityChange={handleQuantityChange}
+      />
       <LightOrangeLine />
       <WalletComponent price={4.53} deliveryFee={1.03} />
       <Button label="Order" />
