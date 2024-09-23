@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh; /* Full height of the viewport */
+  /*height: 20vh; /* Full height of the viewport */
 }
 
 .deliveryAddress {

@@ -22,7 +22,7 @@ const handleNoteClick = () => {
 };
 
 const Order = () => {
-  const [, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(1);
 
   const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
