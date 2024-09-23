@@ -1,2 +1,2 @@
-// import {default as Order} from './Order'
-// export default Order
+import {default as Order} from './Order'
+export default Order
