@@ -44,7 +44,7 @@ const Order = () => {
       </div>
       <GreyHorizontalLine />
       <LightOrangeLine />
-      <PaymentSummary price={4.53} deliveryFee={1.0} />
+      <PaymentSummary price={4.53} deliveryFee={2.01} discountAmount={0.2} />
       <Button label="Order" />
     </div>
   );
