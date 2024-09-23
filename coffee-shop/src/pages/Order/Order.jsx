@@ -22,7 +22,7 @@ const handleNoteClick = () => {
 };
 
 const Order = () => {
-  const [ , setQuantity] = useState(1);
+  const [, setQuantity] = useState(1);
 
   const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
@@ -30,8 +30,7 @@ const Order = () => {
 
   return (
     <div>
-      Order page
-      <Header />
+      <Header pageName="Order" />
       <CustomizedRadioButton />
       <DeliveryAddress
         location="Jl. Kpg Sutoyo"
@@ -59,6 +58,7 @@ const Order = () => {
       />
       <LightOrangeLine />
       <PaymentSummary price={4.53} deliveryFee={2.01} discountAmount={0.2} />
+      <WalletComponent price={4.53} deliveryFee={2.01} />
       <Button label="Order" />
     </div>
   );
