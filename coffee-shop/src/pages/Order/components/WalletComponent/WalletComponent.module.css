@@ -1,0 +1,53 @@
+.walletContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--whiteText);
+  margin: 0 5px;
+}
+
+.walletIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.amount {
+  font-size: 1.2em;
+  color: var(--orangeButton);
+  font-weight: 600;
+}
+
+.expandIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .walletContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .textContainer {
+    align-items: flex-start;
+  }
+
+  .amount {
+    margin-top: 5px;
+  }
+}

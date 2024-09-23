@@ -9,6 +9,7 @@ import PaymentSummary from "./components/PaymentSummary";
 import GreyHorizontalLine from "../../genericComponents/GreyHorizontalLine";
 import LightOrangeLine from "./components/LightOrangeLine";
 import icons from "../../assets/icons/iconImport";
+import WalletComponent from "./components/WalletComponent";
 
 const handleEditClick = () => {
   console.log("Edit button clicked"); //Temporary logic
