@@ -1,7 +1,7 @@
-import coffee from "../mock/coffee.json";
+import coffee from "../mocks/cofee.json";
 
 // Function to filter categories or return all categories based on user selection
-export const filterCategories = (categoryName) => {
+function FilterCategories(categoryName) {
   if (categoryName === "All Coffee") {
     return coffee.menu.categories.map((category) => ({
       name: category.name,
@@ -28,4 +28,5 @@ export const filterCategories = (categoryName) => {
     }
     return [];
   }
-};
+}
+export default FilterCategories;
