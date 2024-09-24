@@ -3,19 +3,23 @@ import { createSlice } from "@reduxjs/toolkit";
 const addressSlice = createSlice({
   name: "address",
   initialState: {
-    address: "",
+    title: "",
+    details: "",
   },
   reducers: {
-    setAddress: (state, action) => {
-      state.address = action.payload;
+    setTitle: (state, action) => {
+      state.title = action.payload;
+    },
+    setDetails: (state, action) => {
+      state.details = action.payload;
     },
   },
 });
 
 //Reducer
-export const { setAddress } = addressSlice.actions;
+export const { setTitle, setDetails } = addressSlice.actions;
 
 // Selector
-export const addressSelector = (state) => state.address.address;
+export const addressSelector = (state) => state.address;
 
 export default addressSlice.reducer;
