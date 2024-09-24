@@ -4,7 +4,7 @@
   align-items: flex-start;
   flex-direction: column;
   min-width: 327px;
-  margin-top: 20px;
+  margin: 10px auto auto -10px;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
 
 .SizeText {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--BlackText);
   margin-bottom: 10px;
   margin-left: 10px; /* Align "Size" with the first button */

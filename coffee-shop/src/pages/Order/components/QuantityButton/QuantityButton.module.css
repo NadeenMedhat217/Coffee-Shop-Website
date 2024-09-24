@@ -1,0 +1,11 @@
+.button {
+  background-color: var(--whiteText);
+  border:var(--orangeButton);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}

@@ -26,7 +26,6 @@
 }
 
 .amount {
-  font-size: 1.2em;
   color: var(--orangeButton);
   font-weight: 600;
 }

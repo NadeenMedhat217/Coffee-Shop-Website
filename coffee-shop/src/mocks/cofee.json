@@ -10,7 +10,7 @@
               "description": "A strong and bold coffee made by forcing steam through ground coffee beans.",
               "price": 2.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/espresso.jpg"
+              "image": "/images/espresso.jpg"
             },
             {
               "id": "double_espresso_002",

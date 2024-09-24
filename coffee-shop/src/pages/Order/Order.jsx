@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../genericComponents/Header/Header";
 import Button from "../../genericComponents/Button/";
 import CustomizedRadioButton from "./components/CustomizedRadioButton";
@@ -10,6 +10,8 @@ import GreyHorizontalLine from "../../genericComponents/GreyHorizontalLine";
 import LightOrangeLine from "./components/LightOrangeLine";
 import icons from "../../assets/icons/iconImport";
 import WalletComponent from "./components/WalletComponent";
+import QuantityOrdered from "./components/QuantityOrdered";
+import images from "../../assets/images/imageImports";
 
 const handleEditClick = () => {
   console.log("Edit button clicked"); //Temporary logic
@@ -20,10 +22,15 @@ const handleNoteClick = () => {
 };
 
 const Order = () => {
+  const [quantity, setQuantity] = useState(1);
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+  };
+
   return (
     <div>
-      Order page
-      <Header />
+      <Header pageName="Order" />
       <CustomizedRadioButton />
       <DeliveryAddress
         location="Jl. Kpg Sutoyo"
@@ -44,8 +51,14 @@ const Order = () => {
         </div>
       </div>
       <GreyHorizontalLine />
+      <QuantityOrdered
+        image={images.coffee2}
+        name="Caffee Mocha"
+        onQuantityChange={handleQuantityChange}
+      />
       <LightOrangeLine />
       <PaymentSummary price={4.53} deliveryFee={2.01} discountAmount={0.2} />
+      <WalletComponent price={4.53} deliveryFee={2.01} />
       <Button label="Order" />
     </div>
   );
