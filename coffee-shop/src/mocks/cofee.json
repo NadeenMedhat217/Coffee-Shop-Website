@@ -10,7 +10,7 @@
               "description": "A strong and bold coffee made by forcing steam through ground coffee beans.",
               "price": 2.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "/images/espresso.jpg"
+              "image": "Coffee1.png"
             },
             {
               "id": "double_espresso_002",
@@ -18,7 +18,7 @@
               "description": "Twice the amount of espresso for an extra strong flavor.",
               "price": 3.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/double_espresso.jpg"
+              "image": "Coffee1.png"
             },
             {
               "id": "macchiato_003",
@@ -26,7 +26,7 @@
               "description": "Espresso with a small amount of steamed milk.",
               "price": 3.00,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/macchiato.jpg"
+              "image": "Coffee2.png"
             }
           ]
         },
@@ -39,7 +39,7 @@
               "description": "Espresso with steamed milk and a light layer of foam.",
               "price": 4.00,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/cafe_latte.jpg"
+              "image": "Coffee2.png"
             },
             {
               "id": "vanilla_latte_005",
@@ -47,7 +47,7 @@
               "description": "Cafe Latte with vanilla syrup.",
               "price": 4.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/vanilla_latte.jpg"
+              "image": "Coffee3.png"
             },
             {
               "id": "caramel_latte_006",
@@ -55,7 +55,7 @@
               "description": "Cafe Latte with caramel syrup.",
               "price": 4.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/caramel_latte.jpg"
+              "image": "Coffee3.png"
             }
           ]
         },
@@ -68,7 +68,7 @@
               "description": "Espresso with equal parts steamed milk and foam.",
               "price": 3.75,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/cappuccino.jpg"
+              "image": "Coffee4.png"
             },
             {
               "id": "mocha_cappuccino_008",
@@ -76,7 +76,7 @@
               "description": "Cappuccino with chocolate syrup.",
               "price": 4.25,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/mocha_cappuccino.jpg"
+              "image": "Coffee4.png"
             }
           ]
         },
@@ -89,7 +89,7 @@
               "description": "Slow-brewed coffee served over ice.",
               "price": 3.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/cold_brew.jpg"
+              "image": "Coffee5.png"
             },
             {
               "id": "nitro_cold_brew_010",
@@ -97,7 +97,7 @@
               "description": "Cold brew infused with nitrogen for a creamy texture.",
               "price": 4.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/nitro_cold_brew.jpg"
+              "image": "Coffee5.png"
             }
           ]
         },
@@ -110,7 +110,7 @@
               "description": "Spiced chai tea with steamed milk.",
               "price": 4.00,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/chai_tea_latte.jpg"
+              "image": "Coffee6.png"
             },
             {
               "id": "green_tea_012",
@@ -118,7 +118,7 @@
               "description": "Brewed green tea served hot or iced.",
               "price": 2.75,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/green_tea.jpg"
+              "image": "Coffee6.png"
             },
             {
               "id": "herbal_tea_013",
@@ -126,7 +126,7 @@
               "description": "A variety of caffeine-free herbal teas.",
               "price": 2.50,
               "sizes": ["Small", "Medium", "Large"],
-              "image": "https://example.com/images/herbal_tea.jpg"
+              "image": "Coffee7.png"
             }
           ]
         }
