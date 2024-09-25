@@ -9,7 +9,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/details",
+    // Add dynamic parameters for category, pageName, and id
+    path: "/details/:category/:id",
     element: <Details />,
   },
   {
@@ -17,4 +18,5 @@ const router = createBrowserRouter([
     element: <Order />,
   },
 ]);
+
 export default router;
