@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const deliveryOptionSlice = createSlice({
   name: "deliveryOption",
   initialState: {
-    option: "Delivery", // or 'PickUp'
+    option: "Deliver", // or 'PickUp'
   },
   reducers: {
     setOption: (state, action) => {

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setOption,
   deliveryOptionSelector,
-} from "../slices/deliveryOptionSlice";
+} from "../../../../store/deliveryOptionSlice";
 import styles from "../CustomizedRadioButton/CustomizedRadioButton.module.css";
 
 const CustomizedRadioButton = () => {

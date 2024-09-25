@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { deliveryOptionSelector } from "../slices/deliveryOptionSlice";
+import { deliveryOptionSelector } from "../../../../store/deliveryOptionSlice";
 import styles from "./PaymentSummary.module.css";
-import PriceBrief from "./PriceBrief";
+import PriceBrief from "./PriceBreif";
 
 const PaymentSummary = ({ price, deliveryFee, discountAmount }) => {
   //to know the user selected option
