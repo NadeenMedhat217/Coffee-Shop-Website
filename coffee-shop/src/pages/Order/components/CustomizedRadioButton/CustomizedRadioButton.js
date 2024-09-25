@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setOption,
+  deliveryOptionSelector,
+} from "../slices/deliveryOptionSlice";
 import styles from "../CustomizedRadioButton/CustomizedRadioButton.module.css";
 
 const CustomizedRadioButton = () => {
   const DELIVER = "Deliver";
   const PICK_UP = "Pick Up";
-  const [selected, setSelected] = useState(DELIVER);
+  const dispatch = useDispatch();
+  const selected = useSelector(deliveryOptionSelector);
+
+  const handleOptionChange = (option) => {
+    dispatch(setOption(option));
+  };
+  //used the useDispatch and useSelector to update the store with the selected Delivery Option
 
   return (
     <div className={styles.toggleWrapper}>
@@ -14,7 +25,7 @@ const CustomizedRadioButton = () => {
           id={DELIVER}
           name="option"
           checked={selected === DELIVER}
-          onChange={() => setSelected(DELIVER)}
+          onChange={() => handleOptionChange(DELIVER)}
         />
         <label
           htmlFor={DELIVER}
@@ -30,7 +41,7 @@ const CustomizedRadioButton = () => {
           id={PICK_UP}
           name="option"
           checked={selected === PICK_UP}
-          onChange={() => setSelected(PICK_UP)}
+          onChange={() => handleOptionChange(PICK_UP)}
         />
         <label
           htmlFor={PICK_UP}
