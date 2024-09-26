@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { addressSelector } from "../../store/addressSlice";
 import Header from "../../genericComponents/Header/Header";
 import Button from "../../genericComponents/Button/";
 import CustomizedRadioButton from "./components/CustomizedRadioButton";
@@ -23,6 +25,7 @@ const handleNoteClick = () => {
 
 const Order = () => {
   const [quantity, setQuantity] = useState(1);
+  const address = useSelector(addressSelector);
 
   const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
@@ -33,8 +36,8 @@ const Order = () => {
       <Header pageName="Order" />
       <CustomizedRadioButton />
       <DeliveryAddress
-        location="Jl. Kpg Sutoyo"
-        addressDetails="Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai."
+        location={address.title}
+        addressDetails={address.details}
       />
       <div className={styles.buttonContainer}>
         <div className={styles.buttonWrapper}>
