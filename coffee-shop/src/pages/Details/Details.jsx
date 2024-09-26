@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../store/itemsSlice";
 import Header from "../../genericComponents/Header/Header";
 import DetailsHeroImage from "./components/DetailsHeroImage";
 import GreyHorizontalLine from "../../genericComponents/GreyHorizontalLine";
@@ -14,10 +16,20 @@ const Details = () => {
   // Get the category and id from the URL params
   // useParams() is a hook that is used to extract category and id from the URL.
   const { category, id } = useParams();
-
+  const dispatch = useDispatch();
   // Fetch the coffee data from the JSON using DetailsFunction
+  
   const coffeeItem = DetailsFunction(id, category);
-  const imagePath = require(`../../assets/images/${coffeeItem.image}`);
+  useEffect(() => {
+    if (coffeeItem) {
+      dispatch(addItem(coffeeItem)); // dispatch the addItem action
+    }
+  }, [coffeeItem, dispatch]);
+/*   const imagePath = require(`../../assets/images/${coffeeItem.image}`);
+ */  const imagePath = coffeeItem.image
+  ? require(`../../assets/images/${coffeeItem.image}`)
+  : null;
+
   return (
     <>
       <Header pageName="Details" />
@@ -26,7 +38,7 @@ const Details = () => {
       <GreyHorizontalLine />
       <DescriptionBox textDiscription={coffeeItem.description} />
       <SizeBox />
-      <PageFooter itemPrice={coffeeItem.price} />
+      <PageFooter itemDetails={coffeeItem} />
     </>
   );
 };

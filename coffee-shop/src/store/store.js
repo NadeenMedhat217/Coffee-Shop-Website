@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import deliveryOptionReducer from "./slices/deliveryOptionSlice";
-import addressReducer from "./slices/addressSlice";
-import itemsReducer from "./slices/itemsSlice";
+import deliveryOptionReducer from "./deliveryOptionSlice";
+import addressReducer from "./addressSlice";
+import itemsReducer from "./itemsSlice";
 
 const store = configureStore({
   reducer: {
