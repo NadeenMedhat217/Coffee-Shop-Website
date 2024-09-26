@@ -20,11 +20,13 @@ const Details = () => {
   // Fetch the coffee data from the JSON using DetailsFunction
   
   const coffeeItem = DetailsFunction(id, category);
+
   useEffect(() => {
     if (coffeeItem) {
       dispatch(addItem(coffeeItem)); // dispatch the addItem action
     }
   }, [coffeeItem, dispatch]);
+  
 /*   const imagePath = require(`../../assets/images/${coffeeItem.image}`);
  */  const imagePath = coffeeItem.image
   ? require(`../../assets/images/${coffeeItem.image}`)

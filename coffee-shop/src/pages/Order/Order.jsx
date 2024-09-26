@@ -60,7 +60,7 @@ const Order = () => {
         onQuantityChange={handleQuantityChange}
       />
       <LightOrangeLine />
-      <PaymentSummary price={4.53} deliveryFee={2.01} discountAmount={0.2} />
+      <PaymentSummary deliveryFee={2.01} discountAmount={0.2} />
       <WalletComponent price={4.53} deliveryFee={2.01} />
       <Button label="Order" />
     </div>
