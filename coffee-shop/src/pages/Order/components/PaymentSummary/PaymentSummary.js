@@ -6,34 +6,16 @@ import { itemsSelector } from "../../../../store/itemsSlice";
 import styles from "./PaymentSummary.module.css";
 import PriceBrief from "./PriceBreif";
 
-const PaymentSummary = ({ deliveryFee, discountAmount }) => {
-  // useParams() is a hook that is used to extract category and id from the URL.
-  const { id } = useParams();
-
+const PaymentSummary = ({ selectedId, deliveryFee, discountAmount }) => {
+  console.log(selectedId);
   //to know the user selected option
   const selectedOption = useSelector(deliveryOptionSelector);
 
   // To get the items from the store
   const items = useSelector(itemsSelector);
 
-  // Find the item based on category and id
-  //const selectedItem = items.find((item) => item.id === id);
-
-  // Access the first item in the array
-  //const firstItem = items.length > 0 ? items[0] : null;
-
-    // Find the item based on id within nested objects
-    let selectedItem = null;
-    for (const item of items) {
-      if (item.id === id) {
-        selectedItem = item;
-        break;
-      }
-      if (item.nestedItems) {
-        selectedItem = item.nestedItems.find(nestedItem => nestedItem.id === id);
-        if (selectedItem) break;
-      }
-    }
+  // Find the item based on id
+  const selectedItem = items.find((item) => item.id === selectedId);
 
   // Calculate the total price from the items
   const totalPrice = selectedItem.price;

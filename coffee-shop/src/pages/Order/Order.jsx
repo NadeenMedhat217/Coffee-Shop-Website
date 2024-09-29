@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { addressSelector } from "../../store/addressSlice";
+import { selectedItemIdSelector } from "../../store/selectedItemSlice";
 import Header from "../../genericComponents/Header/Header";
 import Button from "../../genericComponents/Button/";
 import CustomizedRadioButton from "./components/CustomizedRadioButton";
@@ -26,6 +27,8 @@ const handleNoteClick = () => {
 const Order = () => {
   const [quantity, setQuantity] = useState(1);
   const address = useSelector(addressSelector);
+  const selectedItemId = useSelector(selectedItemIdSelector);
+  console.log(selectedItemId);
 
   const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
@@ -60,7 +63,11 @@ const Order = () => {
         onQuantityChange={handleQuantityChange}
       />
       <LightOrangeLine />
-      <PaymentSummary deliveryFee={2.01} discountAmount={0.2} />
+      <PaymentSummary
+        selectedId={selectedItemId}
+        deliveryFee={2.01}
+        discountAmount={0.2}
+      />
       <WalletComponent price={4.53} deliveryFee={2.01} />
       <Button label="Order" />
     </div>
