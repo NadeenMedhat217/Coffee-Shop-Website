@@ -58,8 +58,9 @@ const Order = () => {
       </div>
       <GreyHorizontalLine />
       <QuantityOrdered
-        image={images.coffee2}
-        name="Caffee Mocha"
+        itemId={selectedItemId}
+        //image={images.coffee2}
+        //name="Caffee Mocha"
         onQuantityChange={handleQuantityChange}
       />
       <LightOrangeLine />
