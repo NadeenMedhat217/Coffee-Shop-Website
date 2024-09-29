@@ -3,23 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 const addressSlice = createSlice({
   name: "address",
   initialState: {
-    title: "",
-    details: "",
+    title: "Jl. Kpg Sutoyo",
+    details: "Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.",
   },
   reducers: {
-    setTitle: (state, action) => {
-      state.title = action.payload;
-    },
-    setDetails: (state, action) => {
-      state.details = action.payload;
-    },
+    // No reducers needed for read-only state
   },
 });
-
-//Reducer
-export const { setTitle, setDetails } = addressSlice.actions;
 
 // Selector
 export const addressSelector = (state) => state.address;
 
 export default addressSlice.reducer;
+

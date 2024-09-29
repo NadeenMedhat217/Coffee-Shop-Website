@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../store/itemsSlice";
+import { setSelectedItemId } from "../../store/selectedItemSlice";
 import Header from "../../genericComponents/Header/Header";
 import DetailsHeroImage from "./components/DetailsHeroImage";
 import GreyHorizontalLine from "../../genericComponents/GreyHorizontalLine";
@@ -18,17 +19,20 @@ const Details = () => {
   const { category, id } = useParams();
   const dispatch = useDispatch();
   // Fetch the coffee data from the JSON using DetailsFunction
-  
+
   const coffeeItem = DetailsFunction(id, category);
+
   useEffect(() => {
     if (coffeeItem) {
-      dispatch(addItem(coffeeItem)); // dispatch the addItem action
+      dispatch(addItem(coffeeItem)); //dispatch the addItem action
+      dispatch(setSelectedItemId(id)); //dispatch the selected item id
     }
-  }, [coffeeItem, dispatch]);
-/*   const imagePath = require(`../../assets/images/${coffeeItem.image}`);
- */  const imagePath = coffeeItem.image
-  ? require(`../../assets/images/${coffeeItem.image}`)
-  : null;
+  }, [coffeeItem, dispatch, id]);
+
+  /*   const imagePath = require(`../../assets/images/${coffeeItem.image}`);
+   */ const imagePath = coffeeItem.image
+    ? require(`../../assets/images/${coffeeItem.image}`)
+    : null;
 
   return (
     <>

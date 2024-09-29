@@ -9,11 +9,13 @@ import Button from "../../../../genericComponents/Button";
 const PageFooter = ({ itemDetails }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   const handleClick = () => {
     dispatch(addItem(itemDetails));  // dispatch the addItem action
     console.log(itemDetails);
     navigate("/order");
   };
+  
   return (
     <div className={styles.Container}>
       <Price itemPrice={itemDetails.price} />
