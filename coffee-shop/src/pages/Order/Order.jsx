@@ -14,7 +14,7 @@ import LightOrangeLine from "./components/LightOrangeLine";
 import icons from "../../assets/icons/iconImport";
 import WalletComponent from "./components/WalletComponent";
 import QuantityOrdered from "./components/QuantityOrdered";
-import images from "../../assets/images/imageImports";
+
 
 const handleEditClick = () => {
   console.log("Edit button clicked"); //Temporary logic
@@ -59,8 +59,6 @@ const Order = () => {
       <GreyHorizontalLine />
       <QuantityOrdered
         itemId={selectedItemId}
-        //image={images.coffee2}
-        //name="Caffee Mocha"
         onQuantityChange={handleQuantityChange}
       />
       <LightOrangeLine />

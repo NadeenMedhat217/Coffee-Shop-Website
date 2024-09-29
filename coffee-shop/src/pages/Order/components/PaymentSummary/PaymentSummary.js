@@ -7,7 +7,6 @@ import styles from "./PaymentSummary.module.css";
 import PriceBrief from "./PriceBreif";
 
 const PaymentSummary = ({ selectedId, deliveryFee, discountAmount }) => {
-  console.log(selectedId);
   //to know the user selected option
   const selectedOption = useSelector(deliveryOptionSelector);
 

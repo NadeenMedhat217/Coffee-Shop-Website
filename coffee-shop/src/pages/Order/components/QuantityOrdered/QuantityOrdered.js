@@ -4,20 +4,28 @@ import {
   updateItemQuantity,
   itemsSelector,
 } from "../../../../store/itemsSlice";
+import { setQuantity, quantitySelector } from "../../../../store/quantitySlice";
 import styles from "./QuantityOrdered.module.css";
 import QuantityButton from "../QuantityButton";
 import icons from "../../../../assets/icons/iconImport";
-import images from "../../../../assets/images/imageImports";
 
 const QuantityOrdered = ({ itemId }) => {
   const dispatch = useDispatch();
   const items = useSelector(itemsSelector);
   const item = items.find((item) => item.id === itemId);
+  const quantity = useSelector((state) => quantitySelector(state, itemId));
 
-  const [quantity, setQuantity] = useState(item ? item.quantity : 1);
+  //const [quantity, setQuantity] = useState(item ? item.quantity : 1);
 
-  const increaseQuantity = () => setQuantity(quantity + 1);
-  const decreaseQuantity = () => setQuantity(quantity > 1 ? quantity - 1 : 1);
+  const increaseQuantity = () => {
+    const newQuantity = quantity + 1;
+    dispatch(setQuantity({ id: item.id, quantity: newQuantity }));
+  };
+
+  const decreaseQuantity = () => {
+    const newQuantity = quantity > 1 ? quantity - 1 : 1;
+    dispatch(setQuantity({ id: item.id, quantity: newQuantity }));
+  };
 
   useEffect(() => {
     if (item) {
@@ -25,8 +33,8 @@ const QuantityOrdered = ({ itemId }) => {
     }
   }, [quantity, dispatch, item]);
 
-  //console.log(quantity);
-
+  console.log("Item:", item);
+  console.log("Quantity:", quantity);
   const imagePath = item.image
     ? require(`../../../../assets/images/${item.image}`)
     : null;
