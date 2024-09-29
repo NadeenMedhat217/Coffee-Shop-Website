@@ -1,25 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { deliveryOptionSelector } from "../../../../store/deliveryOptionSlice";
-import { itemsSelector } from "../../../../store/itemsSlice";
-import { quantitySelector } from "../../../../store/quantitySlice";
 import styles from "./PaymentSummary.module.css";
 import PriceBrief from "./PriceBreif";
 
-const PaymentSummary = ({ selectedId, deliveryFee, discountAmount }) => {
+const PaymentSummary = ({ deliveryFee, discountAmount, totalPrice }) => {
   //to know the user selected option
   const selectedOption = useSelector(deliveryOptionSelector);
-
-  const quantity = useSelector((state) => quantitySelector(state, selectedId));
-
-  // To get the items from the store
-  const items = useSelector(itemsSelector);
-
-  // Find the item based on id
-  const selectedItem = items.find((item) => item.id === selectedId);
-
-  // Calculate the total price from the items
-  const totalPrice = selectedItem.price * quantity;
 
   //to check if the selected option was Pick Up or Deliver
   const isPickUp = selectedOption === "Pick Up";
